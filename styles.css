@@ -1,0 +1,215 @@
+body {
+    background-color: hsl(221, 100%, 96%) !important;
+    font-family: 'Hanken Grotesk', sans-serif !important;
+}
+
+h1 {
+    padding:.3em 0 0 0!important;
+    font-weight: 700 !important;
+    font-size: 4rem !important;
+}
+
+h4 {
+    font-weight: 500 !important;
+    font-size: 1.8em !important;
+    margin: 2rem 0 0.7rem !important;
+}
+
+h5 {
+    line-height: normal;
+    font-size: 1.5rem !important;
+}
+
+p{
+    font-weight: 300;
+    font-size: 18px;
+    color: hsl(241, 100%, 89%) !important;
+    margin: 0 4.5rem;
+}
+
+span {
+    font-weight: 700;
+    color: black !important;
+}
+
+img {
+    position: relative;
+    top: -1px;
+}
+
+.card {
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 18% auto 20px auto;
+    text-align: center;
+    border-radius: 25px !important;
+    min-width: 750px !important;
+    max-width: 800px;
+    max-height: 800px;
+    height: 500px !important;
+    /* box-shadow: -1px 1px 10px rgba(0,0,0,.2); */
+    box-shadow: 4px 7px 4px hsl(240, 14%, 73%);
+    /* box-shadow: hsl(240, 31%, 81%) 0px 25px 20px -20px; */
+}
+
+.left {
+    width: 50% !important;
+    min-width: 350px !important;
+    min-height: 350px !important;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    color: #fff;
+}
+
+.left .title {
+    margin: 2rem 0;
+    opacity: 0.8;
+}
+
+.left .circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    flex-direction: column;
+}
+
+.circle p {
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+.right {
+    width: 50% !important;
+    min-width: 350px !important;
+    min-height: 350px !important;
+    display: block;
+    text-align: justify;
+    padding-left: 2.5rem;
+}
+
+.right .title {
+    margin: 2rem 0;
+    font-weight: 700 !important;
+}
+
+.property {
+    width: 80%;
+    height: 60px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between !important;
+    border-radius: 10px;
+}
+
+.first {
+    background-color: hsl(227, 100%, 98%);
+    color: hsl(0, 100%, 67%);
+}
+.second {
+    background-color:hsl(137, 100%, 97%);
+    color: hsl(39, 100%, 56%);
+}
+
+.third {
+    background-color:hsl(166, 100%, 92%);
+    color: hsl(166, 100%, 37%);
+}
+
+.fourth {
+    background-color:hsl(234, 83%, 95%);
+    color: hsl(234, 85%, 45%);
+}
+
+.content {
+    margin-bottom: 0 !important;
+    font-weight: 700 !important;
+}
+
+.property .number {
+    color: #63a9bd;
+    position: relative;
+    top: 1px;
+}
+
+.btn {
+    width:80%;
+    height: 50px;
+    margin-top: 20px;
+    background-color:hsl(224, 30%, 27%)!important;
+    border-radius: 2em !important;
+}
+
+.btn:hover {
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%))
+}
+
+.attribution {
+    text-align: center;
+    padding: 9px 0;
+}
+
+.attribution a{
+    text-decoration: none;
+    color:#63a9bd ;
+}
+
+@media screen and (max-width: 768px) {
+    h4 {
+        margin: 10px !important;
+    }
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 352px;
+        padding: 0 !important;
+    }
+    .card {
+        flex-direction: column !important;
+        box-shadow:none;
+        margin: 0 auto 0;        
+        max-width: 100px !important;
+        min-width: 352px !important;
+        height: 100% !important;
+    }
+    .left {
+        min-height: 300px !important;  
+        font-size: 0.8rem !important;  
+    }
+    .left .title {
+        margin: 20px;
+    }
+    .circle {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .circle h1{
+        font-size: 3rem !important;
+        line-height:.2em!important;
+        padding-top: 30px !important;
+    }
+    .circle p {
+        text-align: center;
+        white-space: nowrap;
+        padding-top: 15px;
+    } 
+    .property {
+        width: 270px;
+    }
+    .btn {
+        margin: 0 0 20px;
+        width: 270px
+    }
+    .attribution  {
+        display: none;
+    }
+}
